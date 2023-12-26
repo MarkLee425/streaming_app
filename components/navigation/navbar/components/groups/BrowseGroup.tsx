@@ -10,11 +10,11 @@ const BrowseGroup = () => {
 			<div className="w-fit flex px-2">
 				<Buttons.Button
 					imageProps={{
+						width: 32,
+						height: 32,
 						src: '/penguin.png',
 						loading: 'lazy',
 						alt: 'icon',
-						width: 32,
-						height: 32,
 					}}
 					buttonProps={{
 						className: 'btn',

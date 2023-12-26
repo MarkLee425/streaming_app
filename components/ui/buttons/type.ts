@@ -16,3 +16,5 @@ export type CustomReactIconButtonProps = Omit<ButtonProps, 'imageProps'> & {
 export type LoginButtonProps = Omit<CustomReactIconButtonProps, 'buttonProps'> & {
 	linkProps: LinkProps;
 };
+
+export type LogoutButtonProps = CustomReactIconButtonProps;

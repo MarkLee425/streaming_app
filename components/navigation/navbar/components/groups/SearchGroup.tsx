@@ -26,21 +26,21 @@ const SearchGroup = ({ searchBarProps, searchButton }: SearchGroupProps) => {
 	};
 	useEffect(() => console.log(searchValue), [searchValue]);
 	return (
-		<div className="w-full flex align-middle justify-center items-center">
+		<div className="w-full h-full flex align-middle justify-center items-center">
 			<SearchBar
 				onChange={searchValueOnChangeHandler}
 				placeholder="Search"
 				className="py-[0.45rem] px-2 rounded-l-md bg-transparent outline-none border border-solid text-sm border-gray-500 hover:border-gray-500 hover:border-2 focus:border-purple-500 focus:border-4"
-				size={44}
+				size={50}
 			/>
 			<Buttons.SearchButton
 				iconProps={{
-					className: 'text-gray-100 font-extralight stroke-[2.5]',
+					className: 'text-gray-800 dark:text-gray-100 font-extralight stroke-[2.5]',
 					size: 22,
 				}}
 				buttonProps={{
 					className: cn(
-						'bg-[#2E2E2E] hover:bg-[#323232] py-2 pr-[0.45rem] pl-[0.36rem] rounded-r-md',
+						'bg-button-hover-secondary-light hover:bg-[#D2D2D2]  dark:bg-[#2E2E2E] dark:hover:bg-[#323232] py-2 pr-[0.45rem] pl-[0.36rem] rounded-r-md',
 						{
 							'cursor-not-allowed': isDisabled,
 						},
